@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Random User Information</h1>
+            <p>Discover random people from around the world with comprehensive information</p>
+            <button id="generateBtn" class="generate-btn">Generate Random User</button>
+        </header>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Loading user data...</p>
+        </div>
+
+        <div id="error" class="error hidden"></div>
+
+        <main id="content" class="hidden">
+
+            <section class="user-card">
+                <div class="user-header">
+                    <img id="userPhoto" class="user-photo" src="" alt="User Photo">
+                    <div class="user-basic-info">
+                        <h2 id="userName"></h2>
+                        <p class="user-meta">
+                            <span id="userGender"></span> • 
+                            <span id="userAge"></span> years old
+                        </p>
+                        <p class="user-dob">Born: <span id="userDob"></span></p>
+                    </div>
+                </div>
+                <div class="user-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Email:</span>
+                        <span id="userEmail"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Phone:</span>
+                        <span id="userPhone"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">City:</span>
+                        <span id="userCity"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label"> Country:</span>
+                        <span id="userCountry"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label"> Address:</span>
+                        <span id="userAddress"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="country-card">
+                <div class="card-header">
+                    <h3>Country Information</h3>
+                </div>
+                <div class="country-content">
+                    <img id="countryFlag" class="country-flag" src="" alt="Country Flag">
+                    <div class="country-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Country:</span>
+                            <span id="countryName"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Capital:</span>
+                            <span id="countryCapital"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Languages:</span>
+                            <span id="countryLanguages"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Currency:</span>
+                            <span id="countryCurrency"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="exchange-card">
+                <div class="card-header">
+                    <h3>Currency Exchange Rates</h3>
+                </div>
+                <div class="exchange-content">
+                    <p class="exchange-base">Base Currency: <strong id="baseCurrency"></strong></p>
+                    <div class="exchange-rates">
+                        <div class="rate-item">
+                            <span class="rate-flag">🇺🇸</span>
+                            <div class="rate-info">
+                                <p class="rate-label">US Dollar (USD)</p>
+                                <p class="rate-value" id="rateUSD"></p>
+                            </div>
+                        </div>
+                        <div class="rate-item">
+                            <span class="rate-flag">🇰🇿</span>
+                            <div class="rate-info">
+                                <p class="rate-label">Kazakhstani Tenge (KZT)</p>
+                                <p class="rate-value" id="rateKZT"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news-section">
+                <div class="card-header">
+                    <h3>Latest News Headlines</h3>
+                </div>
+                <div id="newsContainer" class="news-container"></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
