@@ -38,8 +38,8 @@ npm install
 Create a `.env` file in the root directory:
 
 ```env
-NEWS_API_KEY=24075f2789c4bcb8f8cdae724bf9539
-EXCHANGE_API_KEY=6d524103104a763e79f51cd5
+NEWS_API_KEY=*****************
+EXCHANGE_API_KEY=******************
 PORT=3000
 ```
 
